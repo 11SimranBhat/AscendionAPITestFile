@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "174f6a8d-5b11-4f17-816b-c26dae23de95",
+		"name": "AscendionAPITest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46692341",
+		"_collection_link": "https://simran-7802920.postman.co/workspace/Simran's-Workspace~7dda5a4e-a91b-4a69-8a6e-913ca0572a42/collection/46692341-174f6a8d-5b11-4f17-816b-c26dae23de95?action=share&source=collection_link&creator=46692341"
+	},
+	"item": [
+		{
+			"name": "UserDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "f897b9831de97202737a2569e0b4a860e6afbebea29d6ca4a644d3f23167b081",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Simran Test\",\r\n  \"gender\": \"female\",\r\n  \"email\": \"simran.test@ascendion.com\",\r\n  \"status\": \"active\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
